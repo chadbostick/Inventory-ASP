@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<title>Centerline - Inventory Management System</title>
+		<LINK REL="STYLESHEET" TYPE="text/css" HREF="css/default.css" TITLE="default_css">
+			<LINK REL="STYLESHEET" TYPE="text/css" HREF="css/tables.css" TITLE="tables_css">
+				<script language="Javascript" src="js/main_menu.js"></script>
+				<script language="Javascript" src="js/map.js"></script>
+				<script type="text/javascript" src="js/common.js"></script>
+				<script LANGUAGE="JavaScript">
+	<!-- Hide script from old browsers
+	function OpenCustomer( strCustomerId )
+	{
+	  OpenWindow( 'customer_details.asp?intCustomerId='+strCustomerId,'Centerline','width=660,height=480,left='+GetCenterX( 660 )+',top='+GetCenterY( 480 )+',screenX='+GetCenterX( 660 )+',screenY='+GetCenterY( 480 )+',scrollbars=yes,dependent=yes' );
+	}
+
+	function OpenPurchaseOrder( strPurchaseOrderId )
+	{
+	  OpenWindow( 'po_details.asp?intPurchaseOrderId='+strPurchaseOrderId,'Centerline','width=660,height=480,left='+GetCenterX( 660 )+',top='+GetCenterY( 480 )+',screenX='+GetCenterX( 660 )+',screenY='+GetCenterY( 480 )+',scrollbars=yes,dependent=yes' );
+	}
+
+	function OpenQuote( strQuoteId )
+	{
+	  OpenWindow( 'quote_details.asp?intQuoteId='+strQuoteId,'Centerline','width=660,height=480,left='+GetCenterX( 660 )+',top='+GetCenterY( 480 )+',screenX='+GetCenterX( 660 )+',screenY='+GetCenterY( 480 )+',scrollbars=yes,dependent=yes' );
+	}
+
+	function OpenWorkOrder( strWorkOrderId )
+	{
+	  OpenWindow( 'workorder_details.asp?intWorkOrderId='+strWorkOrderId,'Centerline','width=660,height=480,left='+GetCenterX( 660 )+',top='+GetCenterY( 480 )+',screenX='+GetCenterX( 660 )+',screenY='+GetCenterY( 480 )+',scrollbars=yes,dependent=yes' );
+	}
+
+	function OpenSpindle( strSpindleId )
+	{
+	  OpenWindow( 'spindle_details.asp?intSpindleId='+strSpindleId,'Centerline','width=660,height=480,left='+GetCenterX( 660 )+',top='+GetCenterY( 480 )+',screenX='+GetCenterX( 660 )+',screenY='+GetCenterY( 480 )+',scrollbars=yes,dependent=yes' );
+	}
+
+	function OpenProject( strProjectId )
+	{
+	  OpenWindow( 'project_details.asp?intProjectId='+strProjectId,'Centerline','width=657,height=480,left='+GetCenterX( 657 )+',top='+GetCenterY( 480 )+',screenX='+GetCenterX( 657 )+',screenY='+GetCenterY( 480 )+',scrollbars=yes,dependent=yes' );
+	}
+	// End hiding script from old browsers -->
+				</script>
+	</head>
+	<body topmargin="2" leftmargin="2" marginwidth="2" marginheight="2">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="770">
+						<tr>
+							<td><a href="index.html"><IMG SRC="images/menu/menu_top_left.gif" width="202" height="54" border="0"></a></td>
+							<td><IMG SRC="images/menu/menu_top_middle.gif" width="460" height="54" border="0"></td>
+							<td><IMG SRC="images/menu/menu_icon_spindle.gif" width="108" height="54" border="0"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="770">
+						<tr>
+							<td><a href="index.html"><IMG SRC="images/menu/menu_left.gif" width="202" height="25" border="0"></a></td>
+							<td><a href="customer.asp" onmouseOver="imgOn('customer')" onMouseOut="imgOff('customer')">
+									<IMG name="customer" SRC="images/menu/menu_customer_off.gif" width="94" height="25" border="0"></a></td>
+							<td><a href="project.asp" onmouseOver="imgOn('project')" onMouseOut="imgOff('project')">
+									<IMG name="project" SRC="images/menu/menu_project_off.gif" width="76" height="25" border="0"></a></td>
+							<td><a href="spindle.asp" onmouseOver="imgOn('spindle')" onMouseOut="imgOff('spindle')">
+									<IMG name="spindle" SRC="images/menu/menu_spindle_off.gif" width="80" height="25" border="0"></a></td>
+							<td><a href="workorder.asp" onmouseOver="imgOn('work_order')" onMouseOut="imgOff('work_order')">
+									<IMG name="work_order" SRC="images/menu/menu_work_order_off.gif" width="103" height="25" border="0"></a></td>
+							<td><a href="quote.asp" onmouseOver="imgOn('quote')" onMouseOut="imgOff('quote')"> <IMG name="quote" SRC="images/menu/menu_quote_off.gif" width="70" height="25" border="0"></a></td>
+							<td><a href="po.asp" onmouseOver="imgOn('po')" onMouseOut="imgOff('po')"> <IMG name="po" SRC="images/menu/menu_po_off.gif" width="64" height="25" border="0"></a></td>
+							<td><a href="reports.asp" onmouseOver="imgOn('reports')" onMouseOut="imgOff('reports')">
+									<IMG name="reports" SRC="images/menu/menu_reports_off.gif" width="81" height="25" border="0"></td>
+							</a></tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="770">
+						<tr>
+							<td><a href="index.html"><IMG SRC="images/menu/menu_bottom_left.gif" width="202" height="39" border="0"></a></td>
+							<td><IMG SRC="images/menu/menu_bottom_right.gif" width="568" height="39" border="0"></td>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<!-- Page Contents -->
+		<table width="770" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="middle">
+					<!-- Map begin -->
+					<map name="customer">
+						<area shape="circle" href="javascript:OpenCustomer( 0 );" onMouseOver="javascript:rollItem('map_customer', 'add');" onMouseOut="javascript:rollItem('map_customer', 'none');" coords="46,116,12">
+						<area shape="circle" href="customer.asp" onMouseOver="javascript:rollItem('map_customer', 'view');" onMouseOut="javascript:rollItem('map_customer', 'none');" coords="77,116,12">
+						<area shape="circle" href="customer.asp" onMouseOver="javascript:rollItem('map_customer', 'norm');" onMouseOut="javascript:rollItem('map_customer', 'none');" coords="62,60,60">
+					</map><map name="project">
+						<area shape="circle" href="javascript:OpenProject( 0 );" onMouseOver="javascript:rollItem('map_project', 'add');" onMouseOut="javascript:rollItem('map_project', 'none');" coords="143,165,12">
+						<area shape="circle" href="project.asp" onMouseOver="javascript:rollItem('map_project', 'view');" onMouseOut="javascript:rollItem('map_project', 'none');" coords="165,147,12">
+						<area shape="circle" href="project.asp" onMouseOver="javascript:rollItem('map_project', 'norm');" onMouseOut="javascript:rollItem('map_project', 'none');" coords="119,113,60">
+					</map><map name="spindle">
+						<area shape="circle" href="javascript:OpenSpindle( 0 );" onMouseOver="javascript:rollItem('map_spindle', 'add');" onMouseOut="javascript:rollItem('map_spindle', 'none');" coords="122,75,12">
+						<area shape="circle" href="spindle.asp" onMouseOver="javascript:rollItem('map_spindle', 'view');" onMouseOut="javascript:rollItem('map_spindle', 'none');" coords="123,47,12">
+						<area shape="circle" href="spindle.asp" onMouseOver="javascript:rollItem('map_spindle', 'norm');" onMouseOut="javascript:rollItem('map_spindle', 'none');" coords="65,63,60">
+					</map><map name="work_order">
+						<area shape="circle" href="javascript:OpenWorkOrder( 0 );" onMouseOver="javascript:rollItem('map_work_order', 'add');" onMouseOut="javascript:rollItem('map_work_order', 'none');" coords="165,31,12">
+						<area shape="circle" href="workorder.asp" onMouseOver="javascript:rollItem('map_work_order', 'view');" onMouseOut="javascript:rollItem('map_work_order', 'none');" coords="142,13,12">
+						<area shape="circle" href="workorder.asp" onMouseOver="javascript:rollItem('map_work_order', 'norm');" onMouseOut="javascript:rollItem('map_work_order', 'none');" coords="119,68,60">
+					</map><map name="quote">
+						<area shape="circle" href="javascript:OpenQuote( 0 );" onMouseOver="javascript:rollItem('map_quote', 'add');" onMouseOut="javascript:rollItem('map_quote', 'none');" coords="77,63,12">
+						<area shape="circle" href="quote.asp" onMouseOver="javascript:rollItem('map_quote', 'view');" onMouseOut="javascript:rollItem('map_quote', 'none');" coords="45,63,12">
+						<area shape="circle" href="quote.asp" onMouseOver="javascript:rollItem('map_quote', 'norm');" onMouseOut="javascript:rollItem('map_quote', 'none');" coords="61,119,60">
+					</map><map name="po">
+						<area shape="circle" href="javascript:OpenPurchaseOrder( 0 );" onMouseOver="javascript:rollItem('map_po', 'add');" onMouseOut="javascript:rollItem('map_po', 'none');" coords="38,14,12">
+						<area shape="circle" href="po.asp" onMouseOver="javascript:rollItem('map_po', 'view');" onMouseOut="javascript:rollItem('map_po', 'none');" coords="16,31,12">
+						<area shape="circle" href="po.asp" onMouseOver="javascript:rollItem('map_po', 'norm');" onMouseOut="javascript:rollItem('map_po', 'none');" coords="63,69,60">
+					</map><map name="reports">
+						<area shape="circle" href="reports.asp" onMouseOver="javascript:rollItem('map_reports', 'norm');" onMouseOut="javascript:rollItem('map_reports', 'none');" coords="65,61,60">
+					</map><map name="admin">
+						<area shape="circle" href="admin-warning.html" onMouseOver="javascript:rollItem('map_admin', 'norm');" onMouseOut="javascript:rollItem('map_admin', 'none');" coords="63,112,60">
+					</map>
+					<table cellspacing="0" cellpadding="0">
+						<tr>
+							<td><table cellspacing="0" cellpadding="0">
+									<tr>
+										<td><img name="map_project" usemap="#project" src="images/map/project.gif" border="0" width="183" height="179"></td>
+										<td><img name="map_customer" usemap="#customer" src="images/map/customer.gif" border="0" width="126" height="179"></td>
+										<td><img name="map_admin" usemap="#admin" src="images/map/admin.gif" border="0" width="183" height="179"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><table cellspacing="0" cellpadding="0">
+									<tr>
+										<td><img name="map_spindle" usemap="#spindle" src="images/map/spindle.gif" border="0" width="141" height="121"></td>
+										<td><img name="mid_mid" src="images/map/mid_mid.gif" border="0" width="220" height="121"></td>
+										<td><img name="map_reports" usemap="#reports" src="images/map/reports.gif" border="0" width="131" height="121"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><table cellspacing="0" cellpadding="0">
+									<tr>
+										<td><img name="map_work_order" usemap="#work_order" src="images/map/work_order.gif" border="0" width="183" height="180"></td>
+										<td><img name="map_quote" usemap="#quote" src="images/map/quote.gif" border="0" width="126" height="180"></td>
+										<td><img name="map_po" usemap="#po" src="images/map/po.gif" border="0" width="183" height="180"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table> <!-- End of map -->
+				</td>
+			</tr>
+			<tr>
+				<td height="40" valign="bottom" align="right"><a href="http://www.leveragetech.com/"><img src="images/map/bottomTAG.gif" width="672" height="21" border="0"></a></td>
+			</tr>
+		</table> <!-- End of Page Contents -->
+	</body>
+</html>

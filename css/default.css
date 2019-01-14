@@ -1,0 +1,43 @@
+BODY
+{
+    BACKGROUND-COLOR: white;
+    COLOR: black;
+    FONT-FAMILY: Tahoma, Verdana, Arial, 'Microsoft Sans Serif'
+}
+INPUT.graphical_input_field
+{
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-FAMILY: Tahoma, Verdana, Arial, 'Microsoft Sans Serif';
+    FONT-SIZE: 60%;
+    HEIGHT: 12px;
+    MARGIN: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px;
+    WIDTH: 113px
+}
+
+INPUT.graphical_top_search_input_field
+{
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-FAMILY: Tahoma, Verdana, Arial, 'Microsoft Sans Serif';
+    FONT-SIZE: 60%;
+    HEIGHT: 12px;
+    MARGIN: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px;
+    WIDTH: 115px
+}
+a:hover {color:darkblue}
+
+.holidays {font-weight:bold;color:red;text-align:center;}
+.holigreen {color:darkgreen}

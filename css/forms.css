@@ -1,0 +1,103 @@
+.forminput
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    WIDTH: 100%
+}
+TD.label_1
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    FONT-WEIGHT: bolder;
+    VERTICAL-ALIGN: top;
+    WIDTH: 17%;
+    padding: 0 3px 3px 0;
+    border-bottom : 1px solid #ccc;
+    vertical-align : middle;
+}
+TD.input_1
+{
+    WIDTH: 33%;
+    border-bottom : 1px solid #ccc;
+}
+TD.label_2
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    FONT-WEIGHT: bolder;
+    PADDING-LEFT: 20px;
+    VERTICAL-ALIGN: top;
+    WIDTH: 17%;
+    padding: 0 3px 3px 3px;
+    border-bottom : 1px solid #ccc;
+    vertical-align : middle;
+}
+TD.input_2
+{
+    WIDTH: 33%;
+    border-bottom : 1px solid #ccc;
+}
+TD.long_left_label_1
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    FONT-WEIGHT: bolder;
+    VERTICAL-ALIGN: top;
+    WIDTH: 25%
+}
+TD.long_left_input_1
+{
+    WIDTH: 53%
+}
+TD.long_left_label_2
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    FONT-WEIGHT: bolder;
+    PADDING-LEFT: 25px;
+    VERTICAL-ALIGN: top;
+    WIDTH: 12%
+}
+TD.long_left_input_2
+{
+    WIDTH: 10%
+}
+TD.generic_label
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    FONT-WEIGHT: bolder;
+    VERTICAL-ALIGN: top
+}
+TD.generic_input
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%
+}
+TD.generic_input
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    PADDING-BOTTOM: 6px;
+    PADDING-TOP: 2px
+}
+TD.generic_input2
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 100%
+}
+TD.generic_text
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 90%
+}
+input:hover, textarea:hover, select:hover {
+  border : 1px solid #900;
+	}
+
+input:focus, textarea:focus, select:focus {
+  border : 1px solid black;
+	}
+.custext {	
+	background-color : #ffc;
+	}

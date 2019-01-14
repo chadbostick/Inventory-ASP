@@ -1,0 +1,19 @@
+qcinspection_details.asp
+print out should include fields:
+Balancing Requirements 
+Bearing Information
+General Spindle Notes
+FROM spindle_details.asp
+
+*****************
+
+PO total displayed somewhere on the po_details.asp
+!@#$% near impossible without Visual Studio, Indecipherable to this ASP dunce/hater
+
+*****************
+
+REPORT
+order totals per time frame (weekly monthly)
+(toggle open/closed default is both)
+ROW : PO - supplier - date - total
+Summary total of rows

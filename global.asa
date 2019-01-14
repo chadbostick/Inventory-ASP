@@ -1,0 +1,7 @@
+<!--<METADATA TYPE="typelib" UUID="00000205-0000-0010-8000-00AA006D2EA4" NAME="ADODB Type Library" -->
+
+<SCRIPT LANGUAGE='VBScript' RUNAT='Server'>
+sub Application_OnStart
+	Application( "ODBC_DSN" ) = "driver={SQL Server};server=presto;database=centerline;trusted_connection=yes;"
+end sub
+</SCRIPT>

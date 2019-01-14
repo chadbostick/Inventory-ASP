@@ -1,0 +1,15 @@
+body {
+	margin : 0;
+	padding : 0;
+	font : 11px verdana, arial, sans-serif;
+	}
+table {font : 10px verdana, arial, sans-serif;}
+tr, td {border-bottom:5px solid #ddd;line-height : 13px;}
+td.internal_report_label{font-weight:bold;color:red;}
+td {padding-bottom : 1em;}
+.poid {}
+.ponum {}
+.podesc {}
+.ordate {color:gray;}
+.required {text-decoration:underline;}
+.supplier {color:#339;}

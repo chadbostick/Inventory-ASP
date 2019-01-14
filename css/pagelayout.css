@@ -1,0 +1,13 @@
+TD.pagetitle
+{
+    PADDING-BOTTOM: 25px;
+}
+TD.pagesmalltitle
+{
+    PADDING-TOP: 20px;
+    PADDING-BOTTOM: 15px;
+}
+
+.print_only {
+	display : none;
+	}

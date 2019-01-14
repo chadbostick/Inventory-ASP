@@ -1,0 +1,32 @@
+TABLE.sectiontitle
+{
+    BORDER-BOTTOM: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FONT-FAMILY: Tahoma, Verdana, Arial
+}
+TD.sectiontitle
+{
+    BACKGROUND-COLOR: #000066;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-WEIGHT: bolder;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: top
+}
+TD.smallsectiontitle
+{
+    BACKGROUND-COLOR: #000066;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 90%;
+    FONT-WEIGHT: bolder;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: top
+}
+TD.sectioncaption
+{
+    FONT-SIZE: 70%;
+    PADDING-RIGHT: 20px
+}

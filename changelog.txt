@@ -1,0 +1,300 @@
+07/28/2006
+*-*-*-*-*-
+\inventory\email_quote.asp
+Larry Love
+**********
+changed to
+**********
+Jason Mabry
+\inventory\print_quote.asp
+Larry Love
+**********
+changed to
+**********
+Jason Mabry
+------------------------------------------------------------------------
+
+8/1/2006
+*-*-*-*-*-
+rpt_openpo_JM.asp
+NEW PAGE - modified display
+------------------------------------------------------------------------
+
+8/7/2006
+*-*-*-*-*-
+/css/reports_JM.css
+NEW PAGE - modified display
+
+rpt_openworkorders_JM.asp
+NEW PAGE - modified display
+------------------------------------------------------------------------
+
+8/21/2006
+*-*-*-*-*-
+/workorder_details.asp
+ADDED:
+line 499 : WO # to title tag
+line 614 : anchor tag jumps to "Call Log"
+line 990 : ID (for anchor above) added to TD for "Call Log" title
+/print_quote.asp
+ADDED:
+line 250 : WO Number to Authorization Header
+------------------------------------------------------------------------
+
+12/6/2006
+*-*-*-*-*-
+/email_quote.asp
+/print_quote.asp
+ADDED:
+line 256 table row (email)
+line 277 wo order number insterted
+line 239 table row (print)
+/product_details.asp
+CHANGED:
+field labels, "Unit Price" to "CEN Cost" and "Serial Number" to "List Price"
+ADDED:
+styling and titles (tool tips) to aforementioned changes
+------------------------------------------------------------------------
+
+5/1/2007
+*-*-*-*-*-
+workorder_details.asp
+Lines 706 and 707 swapped position to change default option in combobox
+------------------------------------------------------------------------
+
+5/9/2007
+*-*-*-*-*-
+quoteparts_details.asp (lines 376, 388)
+quote_parts_prevused.asp (lines 141, 151)
+quotebearings_details.asp (lines 374, 385)
+All of the above changed the table heading font size via the TR/style
+and changed the OO column TH to OQ/O, including a title in the TH for 
+tooltip
+------------------------------------------------------------------------
+
+7/16/2007
+*-*-*-*-*-
+po_details.asp
+print_pocenterline.asp
+Forgot what I did here! Just modifying HTML output
+------------------------------------------------------------------------
+
+9/21/2007
+*-*-*-*-*-
+email_quote.asp
+Changed emailing account/server details
+------------------------------------------------------------------------
+
+9/24/2007
+*-*-*-*-*-
+Centralizing default multipliers for Labor, Rework, Bearings, Parts
+
+EDITED STORED PROCEDURES
+GetQuoteLaborByQuoteID
+GetQuoteByQuoteID
+GetQuoteByQuoteIDNoRounding
+
+NEW DATABASE TABLE
+tblMultipliers
+
+EDITED FILES
+quote_details.asp
+quotebearings_details.asp
+quoteparts_details.asp
+------------------------------------------------------------------------
+
+2/1/2008
+*-*-*-*-*-
+
+Editing field label language and adding tooltips and related styling to explain
+
+EDITED FILES
+rtp_openworkorders.asp
+rtp_openworkorders_JM.asp
+workorder_details.asp
+product_details.asp
+
+ADDED FILE
+/js/tooltips.js
+------------------------------------------------------------------------
+
+2/7/2008
+*-*-*-*-*-
+rpt_openworkorders_JM.asp
+removed openWindow javascript from head and re-did WO links in column 1
+to turn page instead of popup constrained window
+
+rpt_openworkorders_FOR_EXPORT.asp
+NEW PAGE - modified display, suitable for import into MS Excel via 
+external data web query
+------------------------------------------------------------------------
+
+2/15/2008
+*-*-*-*-*-
+ADDED FILE
+rpt_openpo_FOR_EXPORT.asp
+external data web query
+------------------------------------------------------------------------
+
+1/5/2009
+HOLIDAY
+*-*-*-*-*-
+<!--HOLIDAYS-->
+see HOLIDAYS_email_print_quotes.txt
+
+------------------------------------------------------------------------
+
+4/22/2009
+*-*-*-*-*-
+
+DATABASE TABLE
+tblMultipliers
+Modified multipliers to add the 2% increase mandated to help recover cost of increasing 60 day + terms
+
+EDITED FILES (notes)
+quote_details.asp
+quotebearings_details.asp
+quoteparts_details.asp
+quotelabor_details.asp
+quotesubwork_details.asp
+
+------------------------------------------------------------------------
+
+7/2/2009
+*-*-*-*-*-
+
+STORED PROCEDURE
+spReportFinalInspection
+added:
+tblQCInspections.OilGreaseType_Final,
+tblQCInspections.IntervalDPM_Final,
+tblQCInspections.MainPressure_Final,
+tblQCInspections.TubePressure_Final,
+
+EDITED FILES
+rpt_finalinspection.asp - removed VIBRATION and GSE and added same fields as above stored procedure
+
+------------------------------------------------------------------------
+
+7/13/2009
+*-*-*-*-*-
+
+Added bottom border and top alignment to PO line items
+
+EDITED FILES
+print_pocenterline.asp
+reports.css
+
+------------------------------------------------------------------------
+
+10/15/2009
+*-*-*-*-*-
+/email_quote.asp
+/print_quote.asp
+CHANGED:
+verbiage on quote terms to facilitate new repair.quote@centerline-inc.com email address and process
+
+------------------------------------------------------------------------
+
+2/3/2010
+*-*-*-*-*-
+/qcinspection_details.asp
+/css/print.css
+/css/pagelayout.css
+CHANGED:
+print styles and some markup for QC Inspection sheet
+
+------------------------------------------------------------------------
+
+3/23/2010
+*-*-*-*-*-
+/po_details.asp
+CHANGED:
+added script immediately after BODY
+onmouseover (tooltip) events to the 2 print buttons 
+graphics for the 2 buttons changed
+
+------------------------------------------------------------------------
+
+9/23/2010
+*-*-*-*-*-
+/email_quote.asp
+/print_quote.asp
+CHANGED:
+verbiage on quote terms to address customers without approved credit
+
+------------------------------------------------------------------------
+
+10/8/2010
+*-*-*-*-*-
+/email_quote.asp
+/print_quote.asp
+CHANGED:
+added "All amounts are quoted in US Dollars. " verbiage on quote terms
+
+------------------------------------------------------------------------
+02/17/2011
+*-*-*-*-*-
+/css/reports.css
+/print_quote.asp
+CHANGED:
+added classed spans to words "Standard" and "Expedited" for price totals and deliveries lines.
+added .stnd and .expd class definitions to /css/reports.css
+
+------------------------------------------------------------------------
+6/5/2013
+*-*-*-*-*-
+DATABASE TABLE
+tblMultipliers
+Modified multipliers
+Changed from 14% to 20% base markup by changing multipliers table:
+
+labor		135.00	to 	140.00
+parts		1.14	to 	1.2
+bearings	1.14	to	1.2
+rework		1.64	to	1.7
+
+EDITED FILES (notes)
+quote_details.asp
+quotebearings_details.asp
+quoteparts_details.asp
+quotelabor_details.asp
+quotesubwork_details.asp
+
+------------------------------
+1/5/2017
+*-*-*-*-*-
+DATABASE TABLE
+tblMultipliers
+Modified multipliers
+Changed markup by changing multipliers table:
+
+labor		140.00	to 	SAME
+parts		1.20	to 	1.25
+bearings	1.20	to	1.25
+rework		1.70	to	1.75
+
+EDITED FILES (notes)
+quotebearings_details.asp (red note)
+quoteparts_details.asp (red note)
+quotesubwork_details.asp (red note)
+
+------------------------------
+8/15/2017
+*-*-*-*-*-
+DATABASE TABLE
+tblMultipliers
+Modified multipliers
+Changed markup by changing multipliers table:
+
+labor		140.00	to 	145.00
+parts		1.25	to 	1.28
+bearings	1.25	to	1.28
+rework		1.75	to	1.8
+
+EDITED FILES (notes)
+quotebearings_details.asp (red note)
+quoteparts_details.asp (red note)
+quotesubwork_details.asp (red note)
+quotelabor_details.asp (red note)
+

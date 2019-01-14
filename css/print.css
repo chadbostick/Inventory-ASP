@@ -1,0 +1,58 @@
+/* stylesheet for printing */
+
+/* begin 2/3/2010 for QC inspection sheet printing */
+table.form {
+	border-collapse : collapse;
+	}
+#qcinspectionsheet table.form td {
+	border-bottom : 1px solid #999;
+	border-left : 1px solid #999;
+	padding : 2px;
+	}
+thead {
+	display : table-header-group;
+	}
+table.sectiontitle img,
+table.sectiontitle td.sectiontitle {
+	display : none;
+	}
+input.forminput {
+	border : none;
+	}
+td.sectioncaption {
+	display : inline;
+	}
+.aleft {
+	text-align : left;
+	}
+tr.evenrow {
+	background-color : #efefef;
+	}
+.bottom_rule,
+table.form #Table3{
+	display : none;
+	}
+.print_only {
+	display : block;
+	}
+div.failure {
+	margin-top : 20px;
+	padding : 5px;
+	border-right : 1px solid #999;
+	border-top : 1px solid #999;
+	width : 100%;
+	height : 230px;	
+	}
+.pagebreak {
+	page-break-after : always;
+	}
+.underline {
+	border-bottom : 1px solid #999;
+	}
+.wtf {
+	font-size : .5em;
+	background-color : red;
+	}
+
+/* end 2/3/2010 for QC inspection sheet printing */
+

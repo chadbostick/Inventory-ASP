@@ -1,0 +1,25 @@
+table {
+	font-size : .8em;
+	}
+h2 {
+	color : #006;
+	}
+a:hover {
+	color : red;
+	}
+ul {
+	list-style : square outside;
+	color : #ccc
+	}
+li {
+	margin-bottom : 10px;
+	}
+li ul {
+	margin-top : 10px;
+	}
+li p {
+	font-size : .9em;
+	margin-top : 0;
+	color : #555;
+	}
+

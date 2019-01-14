@@ -1,0 +1,84 @@
+TABLE.itemlist
+{
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none
+}
+TH.itemlist
+{
+    BACKGROUND-COLOR: white;
+    BORDER-BOTTOM: black solid;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 70%;
+    FONT-WEIGHT: bolder
+}
+TD.itemlist
+{
+    FONT-SIZE: 70%;
+    PADDING-BOTTOM: 7px
+}
+CAPTION
+{
+    FONT-SIZE: 10pt
+}
+#attention
+{
+    COLOR: #ff0000
+}
+.evenrow
+{
+    BACKGROUND-COLOR: #c5c5d3
+}
+.oddrow
+{
+    BACKGROUND-COLOR: white
+}
+#selected_evenrow
+{
+    BACKGROUND-COLOR: #AAAED6
+}
+#selected_oddrow
+{
+    BACKGROUND-COLOR: #E2E2EA
+}
+TH.itemlist_roll
+{
+    BACKGROUND-COLOR: #c5c5d3;
+    BORDER-BOTTOM: black solid;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    CURSOR: hand;
+    FONT-SIZE: 70%;
+    FONT-WEIGHT: bolder
+}
+A.sorthead:link
+{
+    COLOR: black
+}
+A.sorthead:visited
+{
+    COLOR: black
+}
+A.sorthead:active
+{
+    COLOR: springgreen
+}
+TD.itemlist_input
+{
+    PADDING-BOTTOM: 7px
+}
+INPUT.itemlist_input
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    WIDTH: 100%
+}
+SELECT.itemlist_input
+{
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 70%;
+    WIDTH: 100%
+}

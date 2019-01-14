@@ -1,0 +1,677 @@
+<html>
+	<head>
+		<title>Centerline - Admin</title>
+		<LINK REL="STYLESHEET" TYPE="text/css" HREF="css/default.css" TITLE="default_css">
+			<LINK REL="STYLESHEET" TYPE="text/css" HREF="css/titles.css" TITLE="titles_css">
+				<LINK REL="STYLESHEET" TYPE="text/css" HREF="css/forms.css" TITLE="forms_css">
+					<SCRIPT language="Javascript" src="js/main_menu.js"></SCRIPT>
+					<SCRIPT language="Javascript" src="js/common.js"></SCRIPT>
+					<script LANGUAGE="JavaScript">
+	<!-- Hide script from old browsers
+	function OpenEmployee( strEmployeeId )
+	{
+	  OpenWindow( 'employee_details.asp?intEmployeeId='+strEmployeeId,'CenterlineEmployee','width=640,height=160,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}	
+	function EmployeeSaved( intId, strName )
+	{
+	}
+
+	function OpenShippingMethod( strShippingMethodId )
+	{
+	  OpenWindow( 'shippingmethod_details.asp?intShippingMethodId='+strShippingMethodId,'CenterlineShippingMethod','width=640,height=120,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}
+
+	function OpenSupplier( strSupplierId )
+	{
+	  OpenWindow( 'supplier_details.asp?intSupplierId='+strSupplierId,'CenterlineSupplier','width=640,height=240,left='+GetCenterX( 640 )+',top='+GetCenterY( 240 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 240 )+',scrollbars=no,dependent=yes' );
+	}
+
+	function OpenProduct( strProductId )
+	{
+	  OpenWindow( 'product_details.asp?intProductId='+strProductId,'CenterlineProduct','width=657,height=480,left='+GetCenterX( 657 )+',top='+GetCenterY( 480 )+',screenX='+GetCenterX( 657 )+',screenY='+GetCenterY( 480 )+',scrollbars=yes,dependent=yes' );
+	}
+
+	function OpenProjectType( strProjectTypeId )
+	{
+	  OpenWindow( 'projecttype_details.asp?intProjectTypeId='+strProjectTypeId,'CenterlineProjectType','width=640,height=160,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}
+
+	function OpenProjectPriority( strProjectPriorityId )
+	{
+	  OpenWindow( 'projectpriority_details.asp?intProjectPriorityId='+strProjectPriorityId,'CenterlineProjectPriority','width=640,height=160,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}
+	
+	function OpenWorkOrderPriority( strWorkOrderPriorityId )
+	{
+	  OpenWindow( 'workorderpriority_details.asp?intWorkOrderPriorityId='+strWorkOrderPriorityId,'CenterlineWorkOrderPriority','width=640,height=160,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}
+
+	function OpenProductCategory( strProductCategoryId )
+	{
+	  OpenWindow( 'productcategory_details.asp?intProductCategoryId='+strProductCategoryId,'CenterlineProductCategory','width=640,height=160,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}
+
+	function OpenProductOwner( strProductOwnerId )
+	{
+	  OpenWindow( 'productowner_details.asp?intProductOwnerId='+strProductOwnerId,'CenterlineProductOwner','width=640,height=160,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}
+
+	function OpenSpindleCategory( strSpindleCategoryId )
+	{
+	  OpenWindow( 'spindlecategory_details.asp?intSpindleCategoryId='+strSpindleCategoryId,'CenterlineSpindleCategory','width=640,height=160,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}
+
+	function OpenLocation( strLocationId )
+	{
+	  OpenWindow( 'location_details.asp?intLocationId='+strLocationId,'CenterlineLocation','width=640,height=160,left='+GetCenterX( 640 )+',top='+GetCenterY( 160 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 160 )+',scrollbars=no,dependent=yes' );
+	}
+
+	function OpenCenterlineInfo( )
+	{
+	  OpenWindow( 'company_details.asp','CenterlineDetails','width=640,height=200,left='+GetCenterX( 640 )+',top='+GetCenterY( 200 )+',screenX='+GetCenterX( 640 )+',screenY='+GetCenterY( 200 )+',scrollbars=no,dependent=yes' );
+	}
+	
+	// End hiding script from old browsers -->
+					</script>
+	</head>
+	<body topmargin="2" leftmargin="2" marginwidth="2" marginheight="2">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="770">
+						<tr>
+							<td><a href="index.html"><IMG SRC="images/menu/menu_top_left.gif" width="202" height="54" border="0"></a></td>
+							<td><IMG SRC="images/menu/menu_top_middle.gif" width="460" height="54" border="0"></td>
+							<td><IMG SRC="images/menu/menu_icon_admin.gif" width="108" height="54" border="0"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="770">
+						<tr>
+							<td><a href="index.html"><IMG SRC="images/menu/menu_left.gif" width="202" height="25" border="0"></a></td>
+							<td><a href="customer.asp" onmouseOver="imgOn('customer')" onMouseOut="imgOff('customer')">
+									<IMG name="customer" SRC="images/menu/menu_customer_off.gif" width="94" height="25" border="0"></a></td>
+							<td><a href="project.asp" onmouseOver="imgOn('project')" onMouseOut="imgOff('project')">
+									<IMG name="project" SRC="images/menu/menu_project_off.gif" width="76" height="25" border="0"></a></td>
+							<td><a href="spindle.asp" onmouseOver="imgOn('spindle')" onMouseOut="imgOff('spindle')">
+									<IMG name="spindle" SRC="images/menu/menu_spindle_off.gif" width="80" height="25" border="0"></a></td>
+							<td><a href="workorder.asp" onmouseOver="imgOn('work_order')" onMouseOut="imgOff('work_order')">
+									<IMG name="work_order" SRC="images/menu/menu_work_order_off.gif" width="103" height="25" border="0"></a></td>
+							<td><a href="quote.asp" onmouseOver="imgOn('quote')" onMouseOut="imgOff('quote')"> <IMG name="quote" SRC="images/menu/menu_quote_off.gif" width="70" height="25" border="0"></a></td>
+							<td><a href="po.asp" onmouseOver="imgOn('po')" onMouseOut="imgOff('po')"> <IMG name="po" SRC="images/menu/menu_po_off.gif" width="64" height="25" border="0"></a></td>
+							<td><a href="reports.asp" onmouseOver="imgOn('reports')" onMouseOut="imgOff('reports')">
+									<IMG name="reports" SRC="images/menu/menu_reports_off.gif" width="81" height="25" border="0"></a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="770">
+						<tr>
+							<td><IMG SRC="images/menu/menu_bottom.gif" width="770" height="39" border="0"></td>
+					</table>
+					<!-- a little spacer betwen header and content 
+					<p style="margin:0 0 20px 117px;font-size:.7em;font-weight : bold;"><a href="file_system_links.html">File System</a></p>
+					<!-- Page Contents -->
+					<table width="700" border="0" cellpadding="0" cellspacing="0"> 
+						<!--Products -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="110">Products</td>
+													<td align="left" width="480"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenProduct( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="product.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Products -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Spindle Parts -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="155">Spindle Parts</td>
+													<td align="left" width="480"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="admin_spindle_parts.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Products -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Transactions -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="230">Inventory Transactions</td>
+													<td align="left" width="370"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="transaction.asp">View / Edit</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Products -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Employee -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="120">Employee</td>
+													<td align="left" width="480"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenEmployee( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="employee.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Employee -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Shipping Method -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="180">Shipping Method</td>
+													<td align="left" width="420"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenShippingMethod( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="shippingmethod.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Shipping Method -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Supplier -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="110">Supplier</td>
+													<td align="left" width="490"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenSupplier( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="supplier.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Supplier -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Product Category -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="185">Product Category</td>
+													<td align="left" width="415"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenProductCategory( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="productcategory.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Product Category -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Product Owner -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="185">Product Owner</td>
+													<td align="left" width="415"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenProductOwner( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="productowner.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Product Owner -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Project Type -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="150">Project Type</td>
+													<td align="left" width="450"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenProjectType( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="projecttype.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Project Type -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Project Priority -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="170">Project Priority</td>
+													<td align="left" width="430"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenProjectPriority( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="projectpriority.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Project Priority -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Work Order Priority -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="170">Work Order Priority</td>
+													<td align="left" width="430"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenWorkOrderPriority( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="workorderpriority.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Work Order Priority -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Spindle Category -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right" ID="Table1">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0" ID="Table2">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="170">Spindle Category</td>
+													<td align="left" width="430"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle" ID="Table3">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenSpindleCategory( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="spindlecategory.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Spindle Category -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Location -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right" ID="Table4">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0" ID="Table5">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="170">Location</td>
+													<td align="left" width="430"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle" ID="Table6">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenLocation( 0 );">Add</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="location.asp">View / Edit / Delete</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Location -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Centerline Info -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="170">Centerline Info</td>
+													<td align="left" width="430"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="javascript:OpenCenterlineInfo( );">Edit</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Priority -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<!--Delete -->
+						<tr>
+							<td align="right">
+								<table width="600" border="0" cellpadding="0" cellspacing="0" align="right">
+									<!--Top Title Bar -->
+									<tr>
+										<td class="pagetitle">
+											<table class="sectiontitle" width="100%" cellpadding="0" cellspacing="0">
+												<tr>
+													<td colspan="3"><IMG SRC="images/title_top.gif" width="100%" height="6"></td>
+												</tr>
+												<tr>
+													<td class="sectiontitle" width="100" id="delete">Delete</td>
+													<td align="left" width="500"><IMG SRC="images/title_right.gif" width="23" height="25"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- End Top Title Bar -->
+									<tr>
+										<td align="center"><table class="form" width="538" border="0" cellpadding="2" cellspacing="4" align="middle">
+												<tr>
+													<td class="generic_input"><li><a href="admin_customer.asp">Customer</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="admin_project.asp">Project</li></a></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="admin_spindle.asp">Spindle</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="admin_po.asp">P.O.</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="admin_quote.asp">Quote</a></li></td>
+												</tr>
+												<tr>
+													<td class="generic_input"><li><a href="admin_workorder.asp">Work Order</a></li></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+						</tr> <!-- End Delete -->
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<title>AAAARGRRGH</title>
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="/css/default.css" TITLE="default_css">
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="/css/tables.css" TITLE="tables_css">
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/main_menu.js"></script>
+  <script language="Javascript">
+  function OpenSpindle( strSpindleId )
+	{
+	  OpenWindow( 'spindle_details.asp?intSpindleId='+strSpindleId,'CenterlineSpindle'+strSpindleId,'width=660,height=540,left='+GetCenterX( 660 )+',top='+GetCenterY( 600 )+',screenX='+GetCenterX( 660 )+',screenY='+GetCenterY( 600 )+',scrollbars=yes,dependent=yes' );
+	}
+	
+	function JumpToSubmit()
+	{
+		if( document.all('strSearchTop').value != "" )
+		{
+			document.location.href = "spindle.asp?blnIsJumpTo=1&strOrderBy=SpindleType&strSearch=" + document.all('strSearchTop').value;
+		}
+		else if ( document.all('strSearchBottom').value != "" )
+		{
+			document.location.href = "spindle.asp?blnIsJumpTo=1&strOrderBy=SpindleType&strSearch=" + document.all('strSearchBottom').value;
+		}
+	}
+	
+	function SearchSubmit()
+	{
+		if( document.all('strSearchTop').value != "" )
+		{
+			document.location.href = "spindle.asp?blnIsJumpTo=0&strOrderBy=SpindleType&strSearch=" + document.all('strSearchTop').value;
+		}
+		else if( document.all('strSearchBottom').value != "" )
+		{
+			document.location.href = "spindle.asp?blnIsJumpTo=0&strOrderBy=SpindleType&strSearch=" + document.all('strSearchBottom').value;
+		}
+	}
+	
+	function RefreshCurrentPage()
+	{
+		document.location.href = '/spindle.asp?blnIsJumpTo=0&strOrderBy=SpindleType&strSearch=3582044';
+	}
+	</script>
+</head>
+<body topmargin=2 leftmargin=2 marginwidth=2 marginheight=2 onload="strSearchTop.focus();">
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td><table border=0 cellpadding=0 cellspacing=0 width=770>
+  <tr><td><a href="index.html"><IMG SRC="/images/menu/menu_top_left.gif" width=202 height=54 border=0></a></td>
+    <td><IMG SRC="/images/menu/menu_top_middle.gif" width=460 height=54 border=0></td>
+    <td><IMG SRC="/images/menu/menu_icon_spindle.gif" width=108 height=54 border=0></td></tr>
+ </table></td></tr>
+<tr><td><table border=0 cellpadding=0 cellspacing=0 width=770>
+  <tr><td><a href="/index.html"><IMG SRC="/images/menu/menu_left.gif" width=202 height=25 border=0></a></td>
+    <td><a href="/customer.asp" onmouseOver="imgOn('customer')" onMouseOut="imgOff('customer')">
+      <IMG name ="customer" SRC="/images/menu/menu_customer_off.gif" width=94 height=25 border=0></a></td>
+    <td><a href="/project.asp" onmouseOver="imgOn('project')" onMouseOut="imgOff('project')">
+      <IMG name ="project" SRC="/images/menu/menu_project_off.gif" width=76 height=25 border=0></a></td>
+    <td><IMG name ="spindle" SRC="/images/menu/menu_spindle_on.gif" width=80 height=25 border=0></td>
+    <td><a href="/workorder.asp" onmouseOver="imgOn('work_order')" onMouseOut="imgOff('work_order')">
+      <IMG name ="work_order" SRC="/images/menu/menu_work_order_off.gif" width=103 height=25 border=0></a></td>
+    <td><a href="/quote.asp" onmouseOver="imgOn('quote')" onMouseOut="imgOff('quote')">
+      <IMG name ="quote" SRC="/images/menu/menu_quote_off.gif" width=70 height=25 border=0></a></td>
+    <td><a href="/po.asp" onmouseOver="imgOn('po')" onMouseOut="imgOff('po')">
+      <IMG name ="po" SRC="/images/menu/menu_po_off.gif" width=64 height=25 border=0></a></td>
+    <td><a href="/reports.asp" onmouseOver="imgOn('reports')" onMouseOut="imgOff('reports')">
+      <IMG name ="reports" SRC="/images/menu/menu_reports_off.gif" width=81 height=25 border=0></td></a></tr>
+ </table></td></tr>
+<tr><td><table border=0 cellpadding=0 cellspacing=0 width=770>
+ <tr><td><a href="/index.html"><IMG SRC="/images/menu/menu_bottom_left.gif" width=202 height=39 border=0></a></td>
+   <td><IMG SRC="/images/menu/menu_bottom_middle.gif" width=194 height=39 border=0></td>
+   <td><table border=0 cellpadding=0 cellspacing=0 width=374>
+     <tr><td colspan=2><IMG SRC="/images/menu/menu_bottom_search_top.gif" width=374 height=8 border=0></td></tr>
+     <tr><td rowspan=2><IMG SRC="/images/menu/menu_bottom_search_left.gif" width=8 height=31 border=0></td>
+       <td width=302><table border=0 cellpadding=0 cellspacing=0 width=366>
+         <tr><td valign=bottom width=30><a href="/spindle.asp?intRowStart=1&strOrderBy=SpindleType&strSearch=3582044"><IMG src="/images/search_bar/first_button.gif" width=27 height=20 border=0></a></td>
+           <td valign=bottom width=27><a href="/spindle.asp?intRowStart=-14&strOrderBy=SpindleType&strSearch=3582044"><IMG src="/images/search_bar/previous_button.gif" width=24 height=20 border=0></a></td>
+           <td valign=bottom width=27><a href="/spindle.asp?intRowStart=0&strOrderBy=SpindleType&strSearch=3582044"><IMG src="/images/search_bar/next_button.gif" width=24 height=20 border=0></a></td>
+           <td valign=bottom width=30><a href="/spindle.asp?intRowStart=-14&strOrderBy=SpindleType&strSearch=3582044"><IMG src="/images/search_bar/last_button.gif" width=27 height=20 border=0></a></td>
+           <td valign=bottom width=126><table cellpadding=0 cellspacing=0>
+             <tr><td rowspan=3><IMG src="/images/search_bar/input_field/input_field_left.gif" width=4 height=20 border=0></td>
+               <td><IMG src="/images/search_bar/input_field/input_field_top_bottom.gif" width=115 height=3 border=0></td>
+               <td rowspan=3><IMG src="/images/search_bar/input_field/input_field_right.gif" width=4 height=20 border=0></td></tr>
+             <tr><td><input type=text class="graphical_top_search_input_field" id=strSearchTop name=strSearchTop maxlength=32 onkeypress="CheckEnter(window.event)"></td></tr>
+             <tr><td><IMG src="/images/search_bar/input_field/input_field_top_bottom.gif" width=115 height=3 border=0></td></tr>
+      </table></td>
+    <td valign=bottom width=63><a href="javascript:JumpToSubmit();"><IMG src="/images/search_bar/jump_to_button.gif" width=60 height=20 border=0></a></td>
+    <td valign=bottom width=63><a href="javascript:SearchSubmit();"><IMG src="/images/search_bar/search_button.gif" width=60 height=20 border=0></a></td></tr>
+   </table></td></tr>
+     <tr><td valign=bottom><IMG SRC="/images/menu/menu_bottom_search_bottom.gif" width=366 height=3 border=0></td></tr>
+ </table></td></tr>
+</table>
+
+
+<!-- a little spacer betwen header and content -->
+&nbsp;
+
+
+<!-- Page Contents -->
+<img src="facerub.gif" />
+<!-- End of Page Contents -->
+</body>
+</HTML>

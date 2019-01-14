@@ -1,0 +1,274 @@
+BODY
+{
+    BACKGROUND-COLOR: white;
+    COLOR: black;
+    FONT-FAMILY: Arial, Myriad Pro, 'Microsoft Sans Serif';
+    FONT-SIZE: 80%
+}
+
+/* MONKEYING with Terms and Conditions */
+@media print 
+.page-break { page-break-after: always;
+}
+#terms {
+font-size : .8em;
+}
+#terms p {
+/* line-height : .2em; */
+padding:0;
+margin:0;
+}
+
+
+
+
+.report_title
+{
+    COLOR: darkblue;
+    FONT-SIZE: x-large;
+    TEXT-ALIGN: right
+}
+.contact_info
+{
+    FONT-FAMILY: Verdana, Myriad Pro, Arial;
+    FONT-SIZE: 10pt;
+    letter-spacing:-3px;
+
+}
+.purchaser_info
+{
+    PADDING-BOTTOM: 10px
+}
+.purchaser_label
+{
+    COLOR: indigo;
+    FONT-WEIGHT: bolder
+}
+.po_number
+{
+    COLOR: red;
+    FONT-SIZE: x-large
+}
+TD
+{
+    FONT-SIZE: 80%
+}
+.order_info
+{
+    BORDER-BOTTOM: indigo 1px solid;
+    BORDER-LEFT: indigo 1px solid;
+    BORDER-RIGHT: indigo 1px solid;
+    BORDER-TOP: indigo 1px solid
+}
+.order_label
+{
+    COLOR: darkslategray;
+    FONT-WEIGHT: bolder;
+    TEXT-ALIGN: right
+}
+.order_desc
+{
+    FONT-STYLE: italic
+}
+.item_label
+{
+    BORDER-BOTTOM: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    COLOR: darkslategray;
+    FONT-WEIGHT: bolder
+}
+.item_info
+{
+}
+.item_item
+{
+}
+.item_desc
+{
+    FONT-STYLE: italic
+}
+.item_units
+{
+    FONT-FAMILY: 'Courier New', Courier, Fixedsys;
+    TEXT-ALIGN: right
+}
+.item_unit_price
+{
+    FONT-FAMILY: 'Courier New', Courier, Fixedsys;
+    TEXT-ALIGN: right
+}
+.item_subtotal
+{
+    FONT-FAMILY: 'Courier New', Courier, Fixedsys;
+    TEXT-ALIGN: right
+}
+.item_label .desc
+{
+    FONT-STYLE: italic
+}
+.item_idnum
+{
+    FONT-SIZE: 70%
+}
+.order_total_label
+{
+    BORDER-TOP: indigo double;
+    COLOR: darkblue;
+    FONT-WEIGHT: bolder;
+    TEXT-ALIGN: right
+}
+.order_total
+{
+    BORDER-TOP: indigo double;
+    COLOR: darkblue;
+    FONT-FAMILY: 'Courier New', Courier, Fixedsys;
+    FONT-WEIGHT: bolder;
+    TEXT-ALIGN: right
+}
+.form_header
+{
+}
+.desc_info
+{
+    PADDING-BOTTOM: 20px
+}
+.desc_label
+{
+    COLOR: darkslategray;
+    FONT-WEIGHT: bolder
+}
+.internal_report_title
+{
+    COLOR: #008080;
+    FONT-SIZE: x-large;
+    TEXT-ALIGN: right
+}
+.caption_note
+{
+    FONT-SIZE: xx-small
+}
+.internal_report_number
+{
+    FONT-FAMILY: 'Courier New', Courier, Fixedsys;
+    TEXT-ALIGN: right
+}
+.internal_report_label
+{
+    BORDER-TOP: #008080 thick double;
+    COLOR: black;
+    FONT-WEIGHT: bolder
+}
+.internal_report_group_name
+{
+    BORDER-TOP: #008080 1px solid
+}
+.inventory_report_title
+{
+    BACKGROUND-COLOR: silver;
+    COLOR: white;
+    FONT-SIZE: x-large
+}
+.inventory_report_label
+{
+    BORDER-BOTTOM: silver thin solid;
+    FONT-WEIGHT: bolder
+}
+.inventory_report_summary
+{
+    BORDER-TOP: silver solid;
+    FONT-WEIGHT: bolder
+}
+.inventory_report_summary_number
+{
+    BORDER-TOP: silver solid;
+    FONT-WEIGHT: bolder;
+    TEXT-ALIGN: right
+}
+.quotetitle
+{
+    FONT-FAMILY: Verdana, Myriad Pro, Arial;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: 900;
+    PADDING-BOTTOM: 15px;
+	font-style : italic;
+	font-weight : bold;
+}
+.quotetext
+{
+    FONT-FAMILY: Verdana, Myriad Pro, Arial;
+    FONT-SIZE: 10pt
+}
+.quoteinfo
+{
+    FONT-FAMILY: Verdana, Myriad Pro, Arial;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: bold;
+    font-style : italic;
+}
+.quoteitem
+{
+    BORDER-BOTTOM: silver thin solid;
+    FONT-FAMILY: Verdana, Myriad Pro, Arial;
+    FONT-SIZE: 13pt;
+    font-weight : bold;
+    font-style : italic;
+    MARGIN-LEFT: 20px;
+    PADDING-LEFT: 20px
+}
+.quoteitemtext
+{
+    FONT-FAMILY: Verdana, Myriad Pro, Arial;
+    FONT-SIZE: 8pt;
+    PADDING-LEFT: 30px;
+    font-style : italic;
+}
+.quotetable
+{
+    PADDING-BOTTOM: 15px
+}
+.quotetotal
+{
+    BORDER-BOTTOM: black thin solid
+}
+.quotenote
+{
+    FONT-FAMILY: Verdana, Myriad Pro, Arial;
+    FONT-SIZE: 80%;
+    FONT-STYLE: italic
+}
+.quoteauthorizationtable
+{
+    BORDER-TOP: black double;
+    PADDING-TOP: 8px
+}
+.authorizationline
+{
+    BORDER-BOTTOM: black 2px solid
+}
+
+
+
+
+/*PRINT PO UPDATE*/
+
+td.item_idnum, td.item_item, td.item_desc, td.item_units, td.item_unit_price, td.item_subtotal {
+	border-bottom : 1px solid black;
+	}
+	
+.stnd {
+	font-style : italic;
+	font-weight : bold;	
+	font-size : 12pt;
+	}
+.expd {
+	font-style : italic;
+	font-weight : bold;
+	color : red;
+	font-size : 12pt;
+	}
+	
+.page-break {
+	display:block;
+	page-break-before:always;
+	}
+
